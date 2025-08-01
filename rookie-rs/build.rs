@@ -7,5 +7,5 @@ fn commit_hash() -> String {
 }
 fn main() {
   let hash = commit_hash();
-  println!("cargo:rustc-env=COMMIT_HASH={hash}");
+  println!("cargo:rustc-env=COMMIT_HASH={}", hash);
 }
